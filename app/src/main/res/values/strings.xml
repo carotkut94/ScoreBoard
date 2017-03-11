@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ScoreBoard</string>
+    <string name="title_home">Players</string>
+    <string name="title_fav">Favourite</string>
+</resources>

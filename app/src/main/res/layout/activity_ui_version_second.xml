@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="net.carotkut.scoreboard.ShowDetails">
+
+        <ImageView
+            android:id="@+id/player_image"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_margin="12dp"
+            android:scaleType="fitXY" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/player_image"
+            android:layout_margin="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/player_name_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:padding="12dp"
+                    android:text="Yuvraj"
+                    android:textColor="#ffffff"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/country"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        app:srcCompat="@drawable/ic_1489251301_pen_stroke_sketch_doodle_lineart_212" />
+
+                    <TextView
+                        android:id="@+id/textCountry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/country"
+                        android:layout_alignTop="@+id/country"
+                        android:layout_toRightOf="@+id/country"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/bat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/country"
+                        android:layout_margin="8dp"
+                        app:srcCompat="@drawable/ic_1489251671_cricket" />
+
+                    <TextView
+                        android:id="@+id/text_runs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/bat"
+                        android:layout_alignTop="@+id/bat"
+                        android:layout_toRightOf="@+id/bat"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/matches"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/bat"
+                        android:layout_margin="8dp"
+                        app:srcCompat="@drawable/ic_1489251756_cricket" />
+
+                    <TextView
+                        android:id="@+id/text_matches"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/matches"
+                        android:layout_alignTop="@+id/matches"
+                        android:layout_toRightOf="@+id/matches"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/fav"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/matches"
+                        android:layout_margin="8dp"
+                        app:srcCompat="@drawable/ic_favorite_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/isfav"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/fav"
+                        android:layout_alignTop="@+id/fav"
+                        android:layout_toRightOf="@+id/fav"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card"
+            android:id="@+id/card2"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/desc_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:gravity="fill"
+                        android:padding="6dp"
+                        android:text="Desc"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="20sp" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <ru.dimorinny.floatingtextbutton.FloatingTextButton
+            android:id="@+id/share_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card2"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="8dp"
+            app:floating_background_color="@color/colorAccent"
+            app:floating_icon="@android:drawable/ic_menu_share"
+            app:floating_title="Share"
+            app:floating_title_color="@android:color/white" />
+
+    </RelativeLayout>
+</ScrollView>

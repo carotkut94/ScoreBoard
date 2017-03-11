@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardMaxElevation="12dp"
+    android:layout_margin="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="8dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="Player"
+            android:id="@+id/player_name"
+            android:textStyle="bold"
+            android:padding="8dp"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/isfave"
+            style="?android:attr/starStyle"
+            android:padding="8dp"
+            />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

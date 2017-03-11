@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/sortMatches"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_format_list_numbered_black_24dp"
+        android:title="Sort By Matches" />
+
+    <item
+        android:id="@+id/sortRuns"
+        app:showAsAction="always"
+        android:icon="@drawable/bat_24dp"
+        android:title="Sort By Runs" />
+
+    <item
+        android:id="@+id/portfolio"
+        app:showAsAction="never"
+        android:icon="@drawable/profile_24dp"
+        android:title="Portfolio" />
+
+    <item
+        android:id="@+id/search"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="Portfolio" />
+
+</menu>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.carotkut.scoreboard">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launchicon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launchicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ShowDetails"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Portfolio" />
+        <activity
+            android:name=".MainActivity"
+            android:label="Score Board"
+            android:screenOrientation="portrait" />
+        <activity android:name=".UiVersionSecond"
+            android:screenOrientation="portrait"
+            ></activity>
+    </application>
+
+</manifest>
